@@ -45,7 +45,7 @@ describe('Pessoa Controller Integration Tests', () => {
           senha: '123456'
         }
       });
-    console.log(res.body); // Adicionando log para ver a mensagem de erro
+    console.log(res.body);
     expect(res.statusCode).toEqual(201);
     expect(res.body).toHaveProperty('message', 'Adicionado com sucesso!');
   });
